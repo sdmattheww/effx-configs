@@ -37,3 +37,4 @@ spec:
         - label: 'Healthcheck'
           url:  'https://api.sandata.com/interfaces/intake/clients/actuator/health'
 
+#
