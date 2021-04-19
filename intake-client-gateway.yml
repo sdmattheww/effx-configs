@@ -1,0 +1,39 @@
+---
+version: effx/v1
+kind: service
+spec:
+  name: 'intake-client-gateway'
+  description: 'Intake client gateway service in EKS'
+  annotations:
+    effx.io/owned-by: 'interop'
+  tags:
+    location: 'eks'
+    cluster: 'regular'
+    namespace: 'interop'
+  contact:
+    email: 'stiedemann@ibissoftware.com'
+    chat:
+      label: '#community'
+      url: 'https://teams.microsoft.com/l/channel/19%3a01a390fc33634a3db821c10b1c36e6b8%40thread.tacv2/General?groupId=3d5b4483-1f87-4fbf-95c7-9acf2c579fe3&tenantId=3e213f12-da37-46b5-ac6d-177ae408c719'
+    onCall:
+      label: 'pagerduty schedule'
+      url: 'https://docs.effx.com/#oncall-links'
+  linkGroups:
+    - label: 'Dashboards'
+      links:
+        - label: 'NewRelic'
+          url: 'https://one.newrelic.com/launcher/nr1-core.explorer?pane=eyJuZXJkbGV0SWQiOiJhcG0tbmVyZGxldHMub3ZlcnZpZXciLCJpc092ZXJ2aWV3Ijp0cnVlLCJyZWZlcnJlcnMiOnsibGF1bmNoZXJJZCI6Im5yMS1jb3JlLmV4cGxvcmVyIiwibmVyZGxldElkIjoibnIxLWNvcmUubGlzdGluZyJ9LCJlbnRpdHlJZCI6Ik1qVTFNakF5Tm54QlVFMThRVkJRVEVsRFFWUkpUMDU4T0RVMU1UTTFOamd3In0=&sidebars[0]=eyJuZXJkbGV0SWQiOiJucjEtY29yZS5hY3Rpb25zIiwiZW50aXR5SWQiOiJNalUxTWpBeU5ueEJVRTE4UVZCUVRFbERRVlJKVDA1OE9EVTFNVE0xTmpndyIsInNlbGVjdGVkTmVyZGxldCI6eyJuZXJkbGV0SWQiOiJhcG0tbmVyZGxldHMub3ZlcnZpZXciLCJpc092ZXJ2aWV3Ijp0cnVlfX0=&platform[accountId]=2552026&platform[timeRange][duration]=1800000&platform[$isFallbackTimeRange]=true'
+
+    - label: 'Runbooks'
+      links:
+        - label: 'Runbook'
+          url: 'https://knowledge.sandata.com/#all-updates'
+    - label: 'Version Control'
+      links:
+        - label: 'Bitbucket'
+          url: 'https://bitbucket.sandata.com/projects/IN/repos/intake-client-gateway/browse'
+    - label: 'Healthcheck'
+      links:
+        - label: 'Healthcheck'
+          url:  'https://api.sandata.com/interfaces/intake/clients/actuator/health'
+
